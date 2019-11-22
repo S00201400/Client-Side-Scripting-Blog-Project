@@ -1,0 +1,79 @@
+/* Here is only CSS that I wrote - I did not downloaded a template, I created my own */
+/* second page css*/
+
+.weather-container
+{
+    text-align: center;
+    background-color: rosybrown;
+}
+
+.background{
+    background: grey;
+    margin: 0px;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+#wrapper{
+    position: static;
+    width: 90%;
+    margin: 0 auto;     /* centrare si face sa am aceasi distanta si in stanga si in dreapta */
+    word-break: break-all;
+    background: white; /*#e60d2e;*/
+    box-sizing: border-box;
+    display:block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    
+}
+
+#content{
+    box-sizing: border-box;
+    display:block;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+}
+
+#left-column{
+    float:left; /* makes that all the things that will come after, to move to the left side*/
+    width: 28.50%;
+    padding: 1vh 1vw; /* Relative to 1% of the width of the viewport */
+    height: auto;
+    display: inline-block;
+
+}	
+
+#center-column{
+    float:left;
+    width: 33.33%;
+    padding: 1vh 1vw;
+    height: auto;
+    display: inline-block;
+    
+}
+.content-pic{
+    width: 100%;   
+    height: auto;
+}
+
+#right-column{
+    float:left;
+    width: 28.50%;
+    padding: 1vh 1vw;
+    height: auto;
+    display: inline-block;
+
+}
+#footer{
+    clear:both;
+    width: 100%;
+    text-align: center;
+}
+
+.header{
+    width: 100%;   /* header responsive */
+    height: auto;
+}	
+
+/* Here ends my CSS */
