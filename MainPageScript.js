@@ -29,3 +29,32 @@ $(window).scroll(function(){
 
 //Use the jQuery ajax() method and JSON to display information from another source on the
 //page. Try and display the information graphically.
+$(document).ready(function(e) {
+	var myData;
+    $('.btn').click(function() {
+
+  		$.ajax({
+    		type:"GET",
+    		url:"https://learnwebcode.github.io/json-example/animals-2.json",
+    		success: function(data) {
+        	processData(data);
+              },
+    	dataType: 'json',
+  		});
+  
+	});
+	
+
+	function processData(myData)
+	{
+        //for loop which takes my data and displays it in my table
+		for (var i=0; i<myData.length; i++)
+		{
+            $("#name"+i).html(myData[i].name) 
+            $("#species"+i).html(myData[i].species)
+            $("#likes"+i).html(myData[i].foods.likes+" ")
+            $("#dislikes"+i).html(myData[i].foods.dislikes)
+		}
+		
+	}
+});
