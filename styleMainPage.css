@@ -334,8 +334,9 @@ h4{
     font-family: "Trebuchet MS", Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 100%;
+    display: none;
   }
-  
+
   #customers td, #customers th {
     border: 1px solid #ddd;
     padding: 8px;
